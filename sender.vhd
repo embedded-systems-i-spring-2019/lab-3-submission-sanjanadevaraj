@@ -39,7 +39,6 @@ signal i : std_logic_vector(4 downto 0);
 begin
 FSM: process(clk, en)
      begin
-     --curr <= idle;
         if rising_edge(clk) and en = '1' then
             if rst = '1' then
                 char <= "00000000";
