@@ -44,7 +44,7 @@ if rising_edge(clk) then
       ready <= '1';
       tx <='1';
       curr <= idle;
-      d <= (others => '0');
+      d_count <= (others => '0');
       
    end if;
    
